@@ -1,0 +1,22 @@
+#macro( d )
+<tr><td>$!bodyContent</td></tr>
+#end
+#set( $day = "Friday" )
+Today is $day
+$msg
+#if ( $enabled )
+=== Address ===
+   [$address.zip] $address.city, $address.street
+#end
+
+#foreach( $user in $response.data )
+#if ( $user.age > $request.minage )
+  - $user.id: $user.name is $user.age years old
+#end
+#end
+
+#@d()
+    Definition one
+#end
+#@d()Definition two#end
+#@d()Definition three#end

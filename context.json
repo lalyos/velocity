@@ -1,0 +1,20 @@
+{
+    msg: "hello from Velocity",
+    enabled: true,
+    address: {
+        city: "budapest",
+        zip: "1234",
+        street: "szigony utca 3."
+    },
+    request: {
+        minage: 40
+    },
+    response: {
+        data: [
+            {id:"1", name:"jeno", age:"43"},
+            {id:"2", name:"bela", age:"33"},
+            {id:"3", name:"geza", age:"53"},
+            {id:"4", name:"jolan", age:"23"},
+        ]
+    }
+}
